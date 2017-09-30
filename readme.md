@@ -152,7 +152,7 @@ I install the following homebrew packages:
 
 Several of these packages have additional command line options (_especially `ffmpeg`_), which helps address bloat as well as ensure complete sets of functionality and features depending on the package.
 
-_The `X` package is required in addition to a modified [`~/.tmux.conf`]() to address launching sublime text via `subl .` from `tmux` (by default it will activate the last sublime text window but not launch a new project)._
+_The `X` package is required in addition to a modified [`~/.tmux.conf`](user/.tmux.conf) to address launching sublime text via `subl .` from `tmux` (by default it will activate the last sublime text window but not launch a new project)._
 
 
 ## manual
@@ -160,15 +160,6 @@ _The `X` package is required in addition to a modified [`~/.tmux.conf`]() to add
 Unfortunately OSX is a very different beast from standard unix or linux, and some automation simply isn't feasible.
 
 _These steps can be done manually after automation has completed._
-
-
-### [sublime text](software/sublime-text.md)
-
-Visit the shared document for steps and configuration file templates.
-
-Afterwards, add the command line symlink:
-
-    sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 
 
 ### [iterm2](https://www.iterm2.com/)

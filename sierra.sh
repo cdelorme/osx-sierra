@@ -113,3 +113,6 @@ grep "gvm" ~/.bash_profile &> /dev/null || echo ". ~/.gvm/scripts/gvm" >> ~/.bas
 . ~/.gvm/scripts/gvm
 gvm install go1.9 -B
 gvm use go1.9 --default
+
+# add sublime text command
+sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
