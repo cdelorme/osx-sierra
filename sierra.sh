@@ -107,7 +107,7 @@ sudo chmod +x /usr/local/bin/youtube-dl
 sudo chown $USER:$USER /usr/local/bin/youtube-dl
 
 # install gvm and nvm loading from ~/.bash_profile, and the latest go version
-PROFILE=~/.bash_profile bash < <(curl -Ls https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer 2>& /dev/null)
+PROFILE=~/.bash_profile bash < <(curl -Ls https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh 2>& /dev/null)
 GVM_NO_UPDATE_PROFILE=1 bash < <(curl -Ls https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer 2>& /dev/null)
 grep "gvm" ~/.bash_profile &> /dev/null || echo ". ~/.gvm/scripts/gvm" >> ~/.bash_profile
 . ~/.gvm/scripts/gvm
