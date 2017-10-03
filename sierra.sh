@@ -90,8 +90,8 @@ git config --global credential.helper osxkeychain
 # clone repo and install configuration files
 rm -rf /tmp/osx-sierra
 git clone https://github.com/cdelorme/osx-sierra /tmp/osx-sierra
-sudo rsync -Pav /tmp/osx-sierra/root /
-rsync -Pav /tmp/osx-sierra/user ~/
+sudo rsync -Pav /tmp/osx-sierra/root/ /
+rsync -Pav /tmp/osx-sierra/user/ ~/
 
 # setup crontab to download ssh keys from github then load and clear the crontab
 [ -n "$github_username" ] && echo "*/15 * * * * /usr/local/bin/update-keys $github_username" >> ~/.crontab
