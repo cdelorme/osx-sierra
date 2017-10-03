@@ -9,8 +9,8 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # ask for information to help automate configuration
 [ -z "$github_username" ] && read -p "please enter your github username: " github_username
-[ -z "$github_password" ] && read -p "please enter your github password: " -s github_password
-[ -z "$sshkey_password" ] && read -p "please enter the password for your ssh key (we will create it if it does not eixst): " -s sshkey_password
+[ -z "$github_password" ] && read -p "please enter your github password: " -s github_password; echo ""
+[ -z "$sshkey_password" ] && read -p "please enter the password for your ssh key (we will create it if it does not eixst): " -s sshkey_password; echo ""
 
 # show the user everything that transpires henceforth
 set -x
