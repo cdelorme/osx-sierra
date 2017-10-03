@@ -67,7 +67,7 @@ promptify() {
 			prompt_string="${prompt_string} [${c_green}${git_branch}${c_sgr0}]"
 		fi
 	fi
-	echo -ne "\n${prompt_string}\n "
+	echo -ne "\n${prompt_string}\n$ "
 }
 
 # time every command
