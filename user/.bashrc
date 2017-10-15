@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# add to path, set editor, augment history behavior, enable dynamic resize, and show ~/Library
-export PATH=/usr/local/bin:$PATH
+# set editor, augment history behavior, enable dynamic resize, and show ~/Library
 export EDITOR=vim
 export HISTFILE="$HOME/.bash_history"
 export HISTCONTROL=ignoreboth:erasedups
