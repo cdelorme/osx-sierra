@@ -59,6 +59,7 @@ brew install mercurial
 brew install svn
 brew install mpv --with-bundle
 brew install bash
+brew install bash-completion
 brew install vim --with-override-system-vi
 brew install git
 brew install lame
