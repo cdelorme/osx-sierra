@@ -92,8 +92,8 @@ fi
 . $(brew --prefix)/etc/bash_completion
 
 # load or synchronize default ssh keys
-SSH_AUTH_SOCK=~/.ssh/socket
 ssh-add -l &> /dev/null; sshout=$?
+[ $sshout -eq 0 ] || export SSH_AUTH_SOCK=~/.ssh/socket
 if [ $sshout -eq 2 ]; then
 	rm -f $SSH_AUTH_SOCK
 	eval $(ssh-agent -a $SSH_AUTH_SOCK 2> /dev/null) &> /dev/null
