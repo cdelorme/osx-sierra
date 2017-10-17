@@ -91,7 +91,6 @@ rsync -Pav /tmp/osx-sierra/user/ ~/
 # configure git to use the appropriate usnamer, email, a credential helper, and use git protocol for owned repos
 git config --global user.name "$github_name"
 git config --global user.email "$github_email"
-git config --global credential.helper osxkeychain
 [ -n "$github_username" ] && git config --global url."git@github.com:$github_username".insteadOf "https://github.com/$github_username"
 
 # setup crontab to download ssh keys from github then load and clear the crontab
